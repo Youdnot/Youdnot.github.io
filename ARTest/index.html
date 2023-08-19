@@ -8,14 +8,12 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+<<<<<<< HEAD
     <!--test camera-->
       <video id="video" autoplay></video>
       <script>
         const constraints = video: {
-        facingMode: 'environment',
-        width: { ideal: 1920 }, // 设置期望的分辨率宽度
-        height: { ideal: 1080 }, // 设置期望的分辨率高度
-        frameRate: { ideal: 30 } // 设置期望的帧率
+        facingMode: 'environment'
         };
 
           navigator.mediaDevices.getUserMedia(constraints)
@@ -27,6 +25,20 @@
                   console.error('Error accessing camera:', error);
               });
       </script>
+=======
+    // test camera
+    <video id="video" autoplay></video>
+    <script>
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function (stream) {
+                var videoElement = document.getElementById('video');
+                videoElement.srcObject = stream;
+            })
+            .catch(function (error) {
+                console.error('Error accessing camera:', error);
+            });
+    </script>
+>>>>>>> parent of e5453bc (back)
 
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
