@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    // test camera
-    <video id="video" autoplay></video>
-    <script>
-        navigator.mediaDevices.getUserMedia({ video: true })
-            .then(function (stream) {
-                var videoElement = document.getElementById('video');
-                videoElement.srcObject = stream;
-            })
-            .catch(function (error) {
-                console.error('Error accessing camera:', error);
-            });
-    </script>
+    <!--test camera-->
+      <video id="video" autoplay></video>
+      <script>
+          const constraints = {
+              video: { facingMode: 'environment' } // Request back camera
+          };
+
+          navigator.mediaDevices.getUserMedia(constraints)
+              .then(function (stream) {
+                  var videoElement = document.getElementById('video');
+                  videoElement.srcObject = stream;
+              })
+              .catch(function (error) {
+                  console.error('Error accessing camera:', error);
+              });
+      </script>
 
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
