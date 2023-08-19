@@ -12,7 +12,10 @@
       <video id="video" autoplay></video>
       <script>
           const constraints = {
-              video: { facingMode: 'environment' } // Request back camera
+              video: { facingMode: 'environment',
+                width: { ideal: 1920 }, // 设置期望的分辨率宽度
+                height: { ideal: 1080 }, // 设置期望的分辨率高度
+                frameRate: { ideal: 30 } // 设置期望的帧率} // Request back camera
           };
 
           navigator.mediaDevices.getUserMedia(constraints)
