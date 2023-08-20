@@ -64,7 +64,7 @@
                   
                   <!--获取图片-->
                   <div class="item active">    
-                  <img id="carousel-img0" src="images/Background/background_1.png">
+                  <img id="carousel-img0" src="gallery/Background/background_1.png">
                   </div>
                   <!-- 自适应大图 -->
                   <script>
@@ -83,7 +83,7 @@
 
                   <!--获取图片-->
                   <div class="item">
-                  <img id="carousel-img3" src="images/Background/background_2.png">
+                  <img id="carousel-img3" src="gallery/Background/background_2.png">
                   </div>
                   <!-- 自适应大图 -->
                   <script>
@@ -116,8 +116,9 @@
         </section>
         <script>
           $('section.awSlider .carousel').carousel({
-              pause: '',
-              interval: 5000
+              pause: 'hover',    // 鼠标悬停时是否暂停幻灯片
+              interval: 5000,    // 幻灯片之间的间隔时间，单位为毫秒
+              wrap: true    // 是否循环播放幻灯片
           });
           var startImage = $('section.awSlider .item.active > img').attr('src');
           $('section.awSlider .carousel').on('slid.bs.carousel', function () {
