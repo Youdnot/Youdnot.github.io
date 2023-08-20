@@ -192,163 +192,108 @@
           <a id="beautifont" class="main-nav-link" href="about">About</a>
           <!-- 礼物可以放AR预览 -->
           <a id="beautifont" class="main-nav-link" href="">🎁</a>
-        
+
       </p>
   </div>
 
 </header>
-  
-  <div id="container">
-    <div id="wrap">
-      
-            
-      <div id="content" class="outer">
-        
-          <section id="main" style="float:none;">
-  
-    <article id="post-Uber使用QUIC协议优化App网络性能"  class="article article-type-post" itemscope itemprop="blogPost" >
+
+<!-- 首页文章 -->
+
+<div id="container">
+  <div id="wrap">
+  <div id="content" class="outer">
+  <section id="main" style="float:none;">
+  <article id="post-Uber使用QUIC协议优化App网络性能"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
-    
-    
-    <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="2019/12/02/Uber使用QUIC协议优化App网络性能/">Uber使用QUIC协议优化App网络性能</a>
-    </h1>
+
+  <header class="article-header">
+      
+  <h1 class="thumb" itemprop="name">
+
+  </h1>
   
 
-      </header>
+  </header>
     
-    <div class="article-meta">
-      
-	<a href="2019/12/02/Uber使用QUIC协议优化App网络性能/" class="article-date">
-	  <time datetime="2019-12-02T03:08:00.000Z" itemprop="datePublished">2019-12-02</time>
-	</a>
+  <div class="article-meta">
+    
+  <a href="2019/12/02/Uber使用QUIC协议优化App网络性能/" class="article-date">
+    <time datetime="2019-12-02T03:08:00.000Z" itemprop="datePublished">2019-12-02</time>
+  </a>
 
       
-    <a class="article-category-link" href="categories/Web/">Web</a>
+  </div>
 
-      
-      
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>原文：<a href="https://eng.uber.com/employing-quic-protocol/" target="_blank" rel="noopener">Employing QUIC Protocol to Optimize Uber’s App Performance</a></p>
-</blockquote>
-<p>Uber operates on a global scale across more than 600 cities, with our apps relying entirely on wireless connectivity from over 4,500 mobile carriers. To deliver the real-time performance expected from Uber’s users, our mobile apps require low-latency and highly reliable network communication. Unfortunately, the <a href="https://en.wikipedia.org/wiki/HTTP/2" target="_blank" rel="noopener">HTTP/2</a> stack fares poorly in dynamic, lossy wireless networks, and we learned that poor performance can often be traced directly to Transmission Control Protocol (TCP) implementations buried in OS kernels.</p>
-<p>Uber在全球600个城市运营，我们的APP完全依赖于4500家移动网络运营商提供的无线网络服务。为了提供Uber用户期望的实时性能，我们的手机应用需要低延迟、高可用的网络通信。不幸的是，HTTP/2协议在动态、有损的无线网络中表现不佳，我们了解到低性能的原因通常被追溯定位到内核中的TCP实现。</p>
-<p>To address these pain points, we adopted the <a href="https://en.wikipedia.org/wiki/QUIC" target="_blank" rel="noopener">QUIC protocol</a>, a stream-multiplexed modern transport protocol implemented over UDP, which enables us to better control the transport protocol performance. QUIC is currently being standardized by the <a href="https://www.ietf.org/" target="_blank" rel="noopener">Internet Engineering Task Force</a> (IETF) as <a href="https://github.com/quicwg" target="_blank" rel="noopener">HTTP/3</a>.</p>
-<p>After thorough testing of QUIC, we concluded that integrating QUIC in our apps would fchroreduce the tail-end latencies compared to TCP. We witnessed a reduction of 10-30 percent in tail-end latencies for HTTPS traffic at scale in our rider and driver apps. In addition to improving the performance of our apps in low connectivity networks, QUIC gives us end-to-end control over the flow of packets in the user space.</p>
-<p>In this article, we share our experiences optimizing TCP performance for Uber’s apps by moving to a network stack that supports the QUIC protocol.</p>
-<h2 id="State-of-the-Art-TCP"><a href="#State-of-the-Art-TCP" class="headerlink" title="State of the Art: TCP"></a>State of the Art: TCP</h2><p>On today’s Internet, <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol" target="_blank" rel="noopener">TCP</a> is the most widely adopted transport protocol for carrying HTTPS traffic. TCP provides a reliable byte stream, dealing with the complexities of network <a href="https://en.wikipedia.org/wiki/TCP_congestion_control" target="_blank" rel="noopener">congestion</a> and link layer <a href="https://tools.ietf.org/html/rfc2018" target="_blank" rel="noopener">losses</a>. The widespread use of TCP for HTTPS traffic is mainly attributed to ubiquity (almost every OS includes TCP), availability on a wide range of infrastructure, such as load balancers, HTTPS <a href="https://www.nginx.com/" target="_blank" rel="noopener">proxies</a>, and <a href="https://www.akamai.com/us/en/resources/content-distribution-network.jsp" target="_blank" rel="noopener">CDNs</a>, and it’s out-of-the-box functionality for most platforms and networks.</p>
-<p>Most users access Uber’s services on the move, and the tail-end latencies of our applications running on TCP were far from meeting the requirements of the real-time nature of our HTTPS traffic. Specifically, users perceived high tail-end latencies across the world. In Figure 1, below, we plot the tail-end latencies of our HTTPS network calls across major cities:</p>
-<p><img src="/gallery/common/image3-1068x531.png" alt="Figure 1. Tail-end latencies vary across the major cities where Uber operates."></p>
-<p>Although the latencies in India and Brazil’s networks were worse than those in the US and UK, the tail-end latencies are significantly higher than the average latencies, even in the case of the US and UK.</p>
-      
-    </div>
-    <footer class="article-footer">  
-    </footer>
+  <div class="article-entry" itemprop="articleBody">
+    
+  <blockquote>
+    <p><a></a></p>
+  </blockquote>
+  <p>Uber operates on a global scale across more than 600 cities, with our apps relying entirely on wireless connectivity from over 4,500 mobile carriers. To deliver the real-time performance expected from Uber’s users, our mobile apps require low-latency and highly reliable network communication. Unfortunately, the <a href="https://en.wikipedia.org/wiki/HTTP/2" target="_blank" rel="noopener">HTTP/2</a> stack fares poorly in dynamic, lossy wireless networks, and we learned that poor performance can often be traced directly to Transmission Control Protocol (TCP) implementations buried in OS kernels.</p>
+  <p>Uber在全球600个城市运营，我们的APP完全依赖于4500家移动网络运营商提供的无线网络服务。为了提供Uber用户期望的实时性能，我们的手机应用需要低延迟、高可用的网络通信。不幸的是，HTTP/2协议在动态、有损的无线网络中表现不佳，我们了解到低性能的原因通常被追溯定位到内核中的TCP实现。</p>
+  <p>To address these pain points, we adopted the <a href="https://en.wikipedia.org/wiki/QUIC" target="_blank" rel="noopener">QUIC protocol</a>, a stream-multiplexed modern transport protocol implemented over UDP, which enables us to better control the transport protocol performance. QUIC is currently being standardized by the <a href="https://www.ietf.org/" target="_blank" rel="noopener">Internet Engineering Task Force</a> (IETF) as <a href="https://github.com/quicwg" target="_blank" rel="noopener">HTTP/3</a>.</p>
+  <p>After thorough testing of QUIC, we concluded that integrating QUIC in our apps would fchroreduce the tail-end latencies compared to TCP. We witnessed a reduction of 10-30 percent in tail-end latencies for HTTPS traffic at scale in our rider and driver apps. In addition to improving the performance of our apps in low connectivity networks, QUIC gives us end-to-end control over the flow of packets in the user space.</p>
+  <p>In this article, we share our experiences optimizing TCP performance for Uber’s apps by moving to a network stack that supports the QUIC protocol.</p>
+    
+  <h2 id="State-of-the-Art-TCP">
+    <a href="#State-of-the-Art-TCP" class="headerlink" title="State of the Art: TCP"></a>
+    State of the Art: TCP
+  </h2>
+  <p>On today’s Internet, is the most widely adopted transport protocol for carrying HTTPS traffic. TCP provides a reliable byte stream, dealing with the complexities of network <a href="https://en.wikipedia.org/wiki/TCP_congestion_control" target="_blank" rel="noopener">congestion</a> and link layer <a href="https://tools.ietf.org/html/rfc2018" target="_blank" rel="noopener">losses</a>. The widespread use of TCP for HTTPS traffic is mainly attributed to ubiquity (almost every OS includes TCP), availability on a wide range of infrastructure, such as load balancers, HTTPS <a href="https://www.nginx.com/" target="_blank" rel="noopener">proxies</a>, and <a href="https://www.akamai.com/us/en/resources/content-distribution-network.jsp" target="_blank" rel="noopener">CDNs</a>, and it’s out-of-the-box functionality for most platforms and networks.</p>
+  <p>Most users access Uber’s services on the move, and the tail-end latencies of our applications running on TCP were far from meeting the requirements of the real-time nature of our HTTPS traffic. Specifically, users perceived high tail-end latencies across the world. In Figure 1, below, we plot the tail-end latencies of our HTTPS network calls across major cities:</p>
+  <p><img src="/gallery/common/image3-1068x531.png" alt="Figure 1. Tail-end latencies vary across the major cities where Uber operates."></p>
+  <p>Although the latencies in India and Brazil’s networks were worse than those in the US and UK, the tail-end latencies are significantly higher than the average latencies, even in the case of the US and UK.</p>
+    
+  </div>
+  <footer class="article-footer">  
+  </footer>
   </div>
   
+</article>
+
+<!-- 首页文章标准模板 -->
+
+<div id="container">
+  <div id="wrap">
+  <div id="content" class="outer">
+  <section id="main" style="float:none;">
+  <article id="IPv6安全浅析"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+
+  <header class="article-header">
+  <h1 class="thumb" itemprop="name"></h1>
+  </header>
+    
+  <div class="article-meta">
+  <!-- 设定文章跳转超链接，此处设置新文件夹"articles"储存，文件夹以文章名命名，下储存index.html文件为正文 -->
+  <!-- <a href="articles/.../" class="article-date"></a> -->
+  <a href="articles/IPv6安全浅析/" class="article-date">
+    <time datetime="2023-08-20T21:08:00.000Z" itemprop="datePublished">2023-08-20</time>
+  </a>
+  </div>
+
+  <div class="article-entry" itemprop="articleBody">
+    
+  <blockquote>
+    <p>Quote<a>Quote</a></p>
+  </blockquote>
+  <p>content</p>
+    
+  <h2 id="State-of-the-Art-TCP">
+    <a href="#State-of-the-Art-TCP" class="headerlink" title="State of the Art: TCP"></a>
+    State of the Art: TCP
+  </h2>
+  <p>content</p>
+  </div>
+
+  <footer class="article-footer">  
+  </footer>
+  </div>
 </article>
 
 <!-- Table of Contents -->
-  <article id="post-【Android】Wifi设置代理原理解析"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="2019/11/27/【Android】Wifi设置代理原理解析/">【Android】Wifi代理抓包原理</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="2019/11/27/【Android】Wifi设置代理原理解析/" class="article-date">
-	  <time datetime="2019-11-27T14:20:55.000Z" itemprop="datePublished">2019-11-27</time>
-	</a>
-
-    <a class="article-category-link" href="categories/Android/">Android</a>
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>blabla</p>
-    <h1 id="Android源码分析"><a href="#Android源码分析" class="headerlink" title="Android源码分析"></a>Android源码分析</h1>
-    <p>blabla</p>
-      
-    </div>
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-<!-- Table of Contents Template-->
-
-
-  
-    <article id="post-WebSocket协议浅析"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="2018/10/27/WebSocket协议浅析/">WebSocket协议浅析</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="2018/10/27/WebSocket协议浅析/" class="article-date">
-	  <time datetime="2018-10-27T03:08:00.000Z" itemprop="datePublished">2018-10-27</time>
-	</a>
-
-      
-    <a class="article-category-link" href="categories/Web/">Web</a>
-
-      
-      
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="HTTP协议的缺点"><a href="#HTTP协议的缺点" class="headerlink" title="HTTP协议的缺点"></a>HTTP协议的缺点</h2><p><img src="/gallery/common/http-protocol-drawback.jpg" alt="HTTP协议的缺点"></p>
-<ol>
-<li>单向请求：只能是客户端发起，服务端处理并响应</li>
-<li>请求/响应模式</li>
-<li>无状态协议</li>
-<li>半双工协议</li>
-</ol>
-<p>半双工数据传输指数据可以在一个信号载体的两个方向上传输，但是不能同时传输。HTTP协议这种单向请求的特点，注定了如果服务器有连续的状态变化，客户端要获知就非常麻烦。我们只能使用轮询：每隔一段时候，就发出一个询问，了解服务器有没有新的信息。轮询的效率低，非常浪费资源。WebSocket就可以解决这些问题。</p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-
-<!-- Table of Contents -->
-<!-- 页尾定位标签 -->
+<!-- 页尾分页标签 -->
   <!-- <nav id="page-nav">
     
     <span class="page-number current">1</span>
@@ -358,29 +303,26 @@
     <a class="page-number" href="page/12/">12</a>
     <a class="extend next" rel="next" href="page/2/">下一页 &raquo;</a>
   </nav> -->
-
 </section>
-        
-      </div>
-      
-        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
-      
-      <footer id="footer">
-  
+</div>
 
-  <div class="container">
-      	<div class="row">
-	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-    		
-        <p>Have a nice day!</p>
-        <!-- <p class="busuanzi_uv">
-				Visitors : <span id="busuanzi_value_site_uv"></span> |  
-				Visits : <span id="busuanzi_value_site_pv"></span> -->
-		    </p>
-  		   
-		</div>
-		
-  </div>
+<!-- 页尾文字标签 -->
+<div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
+
+<footer id="footer">
+
+<div class="container">
+      <div class="row">
+      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+      
+      <p>Have a nice day!</p>
+      <!-- <p class="busuanzi_uv">
+      Visitors : <span id="busuanzi_value_site_uv"></span> |  
+      Visits : <span id="busuanzi_value_site_pv"></span> -->
+      </p>
+        
+</div>
+</div>
 </footer>
 
 
@@ -398,27 +340,7 @@
       contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
     }
 </script>
-    </div>
-    <!-- <nav id="mobile-nav">
-  
-    <a href="index.html" class="mobile-nav-link">Home</a>
-  
-    <a href="archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="funnysite" class="mobile-nav-link">酷站</a>
-  
-    <a href="collection" class="mobile-nav-link">收藏</a>
-  
-    <a href="about" class="mobile-nav-link">About</a>
-  
-    <a href="/mybooks" class="mobile-nav-link">🎁</a>
-  
-</nav> -->
-    
+    </div> 
 
 <!-- mathjax config similar to math.stackexchange -->
 
@@ -452,94 +374,75 @@
 </script>
 
 
-  <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
-  <script src="fancybox/jquery.fancybox.pack.js"></script>
-
-
+<link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+<script src="fancybox/jquery.fancybox.pack.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/home.js"></script>
+
+<div style="display: none;">
+  <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title" id="myModalLabel">设置</h2>
+    </div>
+<hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+<hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
 
 
-  <script src="js/home.js"></script>
-
-
-
-
-	<div style="display: none;">
-    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+<div class="modal-body">
+    <div style="margin:6px;">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+        Main Text Font Size
+      </a>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div class="panel-body">
+      You have adjusted the font size.
+    </div>
   </div>
-
-
-
-	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-	</script>
-
-
-
-
-
-
-  </div>
-
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title" id="myModalLabel">设置</h2>
-      </div>
-      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
-      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
-
-
-      <div class="modal-body">
-          <div style="margin:6px;">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
-              Main Text Font Size
-            </a>
-          </div>
-          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-          <div class="panel-body">
-            You have adjusted the font size.
-          </div>
-        </div>
       
 
 
-          <div style="margin:6px;">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
-              Dark Mode
-            </a>
-        </div>
-          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-          <div class="panel-body">
-            Dark mode on, click again to turn off
-          </div>
-        </div>
+<div style="margin:6px;">
+  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+    Dark Mode
+  </a>
+</div>
+<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+<div class="panel-body">
+  Dark mode on, click again to turn off
+</div>
+</div>
 
-        <div>
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        </div>
-         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-          <div class="panel-body">
-            Magitour
-          </div>
-          <div class="panel-body">
-            Copyright © 2023 RBCC Group 2 All Rights Reserved.
-          </div>
-        </div>
-      </div>
+<div>
+  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</div>
+<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+<div class="panel-body">Magitour</div>
+<div class="panel-body">2023 RBCC Group 2</div>
+</div>
+</div>
 
 
-      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
-      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
-      <div class="modal-footer">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-      </div>
-    </div>
-  </div>
+<hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+<hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+<div class="modal-footer">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+</div>
+</div>
+</div>
 </div>
   
-  <a id="rocket" href="#top" class=""></a>
-  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
-  
+<a id="rocket" href="#top" class=""></a>
+<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+
 </body>
 </html>
