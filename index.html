@@ -83,22 +83,60 @@
 
                   <!--获取图片-->
                   <div class="item">
-                  <img id="carousel-img3" src="gallery/Background/background_2.png">
+                  <img id="carousel-img1" src="gallery/Background/background_2.png">
                   </div>
                   <!-- 自适应大图 -->
                   <script>
-                      var img3 = new Image();
-                      var imageTag3 = document.getElementById("carousel-img3");
-                      img3.src = imageTag3.src;
-                      img3.onload=function(){
-                        if (img3.width / img3.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag3.style.width = document.body.clientWidth + "px";
+                      var img1 = new Image();
+                      var imageTag1 = document.getElementById("carousel-img1");
+                      img1.src = imageTag1.src;
+                      img1.onload=function(){
+                        if (img1.width / img1.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag1.style.width = document.body.clientWidth + "px";
                         } else {
-                          imageTag3.style.height = document.body.clientHeight + "px";
-                          imageTag3.style.marginLeft = -(document.body.clientHeight * img3.width / img3.height - document.body.clientWidth) / 2 + "px";
+                          imageTag1.style.height = document.body.clientHeight + "px";
+                          imageTag1.style.marginLeft = -(document.body.clientHeight * img1.width / img1.height - document.body.clientWidth) / 2 + "px";
                         }
                       };
                   </script>
+
+                  <!--获取图片-->
+                  <div class="item active">    
+                    <img id="carousel-img2" src="gallery/Background/background_3.png">
+                    </div>
+                    <!-- 自适应大图 -->
+                    <script>
+                        var img2 = new Image();
+                        var imageTag2 = document.getElementById("carousel-img2");
+                        img2.src = imageTag2.src;
+                        img2.onload=function(){
+                          if (img2.width / img2.height <= document.body.clientWidth / document.body.clientHeight) {
+                            imageTag2.style.width = document.body.clientWidth + "px";
+                          } else {
+                            imageTag2.style.height = document.body.clientHeight + "px";
+                            imageTag2.style.marginLeft = -(document.body.clientHeight * img2.width / img2.height - document.body.clientWidth) / 2 + "px";
+                          }
+                        };
+                    </script>
+
+                  <!--获取图片-->
+                  <div class="item active">    
+                    <img id="carousel-img3" src="gallery/Background/background_4.png">
+                    </div>
+                    <!-- 自适应大图 -->
+                    <script>
+                        var img3 = new Image();
+                        var imageTag3 = document.getElementById("carousel-img3");
+                        img3.src = imageTag3.src;
+                        img3.onload=function(){
+                          if (img3.width / img3.height <= document.body.clientWidth / document.body.clientHeight) {
+                            imageTag3.style.width = document.body.clientWidth + "px";
+                          } else {
+                            imageTag3.style.height = document.body.clientHeight + "px";
+                            imageTag3.style.marginLeft = -(document.body.clientHeight * img3.width / img3.height - document.body.clientWidth) / 2 + "px";
+                          }
+                        };
+                    </script>
                 
                 
             </div>
@@ -155,38 +193,36 @@
     
 
     
-      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
-    
-        
-          <div class="homelogoback"  style="border: 1px solid #404040;" >
-            <h1><a href="#content" id="logo">Magitour</a></h1>
-            <h3>Slogan..</h3>
-            <h5>RBCC Group 2</h5>
-          </div>
+    <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
+        <div class="homelogoback"  style="border: 1px solid #404040;" >
+          <h1><a href="#content" id="logo">Magitour</a></h1>
+          <h3>Slogan..</h3>
+          <h5>RBCC Group 2</h5>
+        </div>
     </div>
   </div>
 
-  <!-- 自适应主页背景大图 -->
-  
+<!-- 自适应主页背景大图 -->
 
- <!-- home_logo_image居中 -->
+<!-- home_logo_image居中 -->
  
-    <script>
-        var homelogodiv = document.getElementById("homelogo");
-        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
-          homelogodiv.style.width = document.body.clientWidth + "px";
-          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
-        } else {
-          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
-          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
-        }
-    </script>
+  <script>
+      var homelogodiv = document.getElementById("homelogo");
+      if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
+        homelogodiv.style.width = document.body.clientWidth + "px";
+        homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+      } 
+      else {
+        homelogodiv.style.width = homelogodiv.clientWidth  + "px";
+        homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
+      }
+  </script>
   
 
   <div class="intro-navigate">
       <p class="navigater-list">
         
-          <a id="beautifont" class="main-nav-link" href="index.html">Homepage</a>
+          <a id="beautifont" class="main-nav-link" href="">Homepage</a>
           <a id="beautifont" class="main-nav-link" href="archives">Archieves</a>
           <a id="beautifont" class="main-nav-link" href="collection">Collection</a>
           <a id="beautifont" class="main-nav-link" href="about">About</a>
@@ -210,7 +246,7 @@
   <header class="article-header">
       
   <h1 class="thumb" itemprop="name">
-
+    <a class="article-title">post-Uber使用QUIC协议优化App网络性能</a>
   </h1>
   
 
@@ -263,6 +299,7 @@
 
   <header class="article-header">
   <h1 class="thumb" itemprop="name"></h1>
+  <a class="article-title">Title</a>
   </header>
     
   <div class="article-meta">
