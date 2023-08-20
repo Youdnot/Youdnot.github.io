@@ -22,8 +22,8 @@
 
   
 
-  <link rel="icon" href="/gallery/avatar/0.jpg">
-  <link rel="apple-touch-icon" href="/gallery/avatar/0.jpg">
+  <link rel="icon" href="/gallery/avatar/0.svg">
+  <link rel="apple-touch-icon" href="/gallery/avatar/0.svg">
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
@@ -67,12 +67,12 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                
+                  <!-- 第一张图片设置active默认显示 -->
                   
-                    <div class="item active">
-                  
-                    <img id="carousel-img0" src="https://source.unsplash.com/collection/954550/1920x1080">
+                  <!--获取图片-->
+                  <div class="item active">    
+                  <img id="carousel-img0" src="images/Background/background_1.png">
                   </div>
-
                   <!-- 自适应大图 -->
                   <script>
                       var img0 = new Image();
@@ -87,55 +87,11 @@
                         }
                       };
                   </script>
-                
-                  
-                    <div class="item">
-                  
-                    <img id="carousel-img1" src="https://source.unsplash.com/collection/954550/1920x1081">
-                  </div>
 
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img1 = new Image();
-                      var imageTag1 = document.getElementById("carousel-img1");
-                      img1.src = imageTag1.src;
-                      img1.onload=function(){
-                        if (img1.width / img1.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag1.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag1.style.height = document.body.clientHeight + "px";
-                          imageTag1.style.marginLeft = -(document.body.clientHeight * img1.width / img1.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
-                
-                  
-                    <div class="item">
-                  
-                    <img id="carousel-img2" src="https://source.unsplash.com/collection/954550/1921x1080">
+                  <!--获取图片-->
+                  <div class="item">
+                  <img id="carousel-img3" src="images/Background/background_2.png">
                   </div>
-
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img2 = new Image();
-                      var imageTag2 = document.getElementById("carousel-img2");
-                      img2.src = imageTag2.src;
-                      img2.onload=function(){
-                        if (img2.width / img2.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag2.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag2.style.height = document.body.clientHeight + "px";
-                          imageTag2.style.marginLeft = -(document.body.clientHeight * img2.width / img2.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
-                
-                  
-                    <div class="item">
-                  
-                    <img id="carousel-img3" src="https://source.unsplash.com/collection/954550/1921x1081">
-                  </div>
-
                   <!-- 自适应大图 -->
                   <script>
                       var img3 = new Image();
@@ -151,68 +107,6 @@
                       };
                   </script>
                 
-                  
-                    <div class="item">
-                  
-                    <img id="carousel-img4" src="https://source.unsplash.com/collection/954550/1920x1082">
-                  </div>
-
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img4 = new Image();
-                      var imageTag4 = document.getElementById("carousel-img4");
-                      img4.src = imageTag4.src;
-                      img4.onload=function(){
-                        if (img4.width / img4.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag4.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag4.style.height = document.body.clientHeight + "px";
-                          imageTag4.style.marginLeft = -(document.body.clientHeight * img4.width / img4.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
-                
-                  
-                    <div class="item">
-                  
-                    <img id="carousel-img5" src="https://source.unsplash.com/collection/954550/1922x1080">
-                  </div>
-
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img5 = new Image();
-                      var imageTag5 = document.getElementById("carousel-img5");
-                      img5.src = imageTag5.src;
-                      img5.onload=function(){
-                        if (img5.width / img5.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag5.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag5.style.height = document.body.clientHeight + "px";
-                          imageTag5.style.marginLeft = -(document.body.clientHeight * img5.width / img5.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
-                
-                  
-                    <div class="item">
-                  
-                    <img id="carousel-img6" src="https://source.unsplash.com/collection/954550/1922x1082">
-                  </div>
-
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img6 = new Image();
-                      var imageTag6 = document.getElementById("carousel-img6");
-                      img6.src = imageTag6.src;
-                      img6.onload=function(){
-                        if (img6.width / img6.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag6.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag6.style.height = document.body.clientHeight + "px";
-                          imageTag6.style.marginLeft = -(document.body.clientHeight * img6.width / img6.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
                 
             </div>
 
@@ -238,10 +132,7 @@
               $('section.awSlider > img').attr('src', bscn);
           });
         </script>
-      
 
-    
- 
 
 
     <canvas width="100%" height="100%"></canvas>
@@ -271,16 +162,12 @@
     
       <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
     
-
         
           <div class="homelogoback"  style="border: 1px solid #404040;" >
             <h1><a href="#content" id="logo">Magitour</a></h1>
             <h3>Slogan..</h3>
-            <h5>Mr.Seven</h5>
-            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
+            <h5>RBCC Group 2</h5>
           </div>
-        
-    
     </div>
   </div>
 
@@ -435,379 +322,8 @@
   
 </article>
 
-<!-- Table of Contents -->
 
-
-  
-    <article id="post-移动端接入Cronet网络库实践"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="2019/07/25/移动端接入Cronet网络库实践/">移动端(Android、iOS)接入Cronet实践</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="2019/07/25/移动端接入Cronet网络库实践/" class="article-date">
-	  <time datetime="2019-07-25T14:20:55.000Z" itemprop="datePublished">2019-07-25</time>
-	</a>
-
-      
-    <a class="article-category-link" href="categories/Android/">Android</a>
-
-      
-      
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="QUIC协议"><a href="#QUIC协议" class="headerlink" title="QUIC协议"></a>QUIC协议</h2><p><a href="https://www.chromium.org/quic" target="_blank" rel="noopener">QUIC, a multiplexed stream transport over UDP</a> 是Chromium使用的通信协议，是基于UDP实现的类似于 TCP+TLS+HTTP/2 的协议。也是HTTP 3.0的设计方案。有兴趣的话大家可参考文档： <a href="https://www.chromium.org/quic/playing-with-quic" target="_blank" rel="noopener">Playing with QUIC</a></p>
-<p>Chromium项目是开源的，The Chromium Projects(<a href="http://dev.chromium.org/chromium-projects" target="_blank" rel="noopener">http://dev.chromium.org/chromium-projects</a>) 文档详细介绍了Chromium项目的实现原理，以及如何获取源码并进行编译。</p>
-<p>Cronet 库是Chrome使用的移动端网络库。支持 HTTP、HTTP/2 以及 QUIC 协议。支持 Android 和 iOS 平台。 其编译工具是 gn 和 ninja，类似于 cmake 与 make 的关系。 下面介绍 Cronet 库的编译及编译注意事项。</p>
-<h2 id="获取Chromium源码"><a href="#获取Chromium源码" class="headerlink" title="获取Chromium源码"></a>获取Chromium源码</h2><p>可以参考官方文档：<a href="https://chromium.googlesource.com/chromium/src/+/master/docs/mac_build_instructions.md" target="_blank" rel="noopener">Checking out and building Chromium for Mac</a></p>
-<p>获取源码之前，首先需要下载安装 <a href="https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up" target="_blank" rel="noopener">depot_tools</a> 工具。在一个适当的目录下clone depot_tools包：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://chromium.googlesource.com/chromium/tools/depot_tools.git</span></span><br></pre></td></tr></table></figure>
-<p>将<code>depot_tools</code>的路径（最好是绝对路径，<code>~</code>需替换为<code>$HOME</code>）加进环境变量PATH中，假设 <code>depot_tools</code> 工程在<code>/path/to/depot_tools</code>目录下：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=$PATH:/path/to/depot_tools</span><br></pre></td></tr></table></figure>
-<p>如果从来没有下载过Chromium的代码的话，为源码创建一个文件夹并下载源码：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir chromium &amp;&amp; cd chromium</span><br><span class="line">fetch --no-history chromium       # 可能花费30min或几小时，依网络速度而不同</span><br></pre></td></tr></table></figure>
-<p><code>–no-history</code> 可以节省代码下载时间，它忽略仓库的历史信息；整个代码量较大，约 14G，且<strong>需要翻墙</strong>，1M 左右的速度需要 20~30 分钟。若中间拉取失败，可以执行 <code>gclient sync</code> 继续拉取， 拉取结束后，该目录会生成一个 src 目录，包含 cronet 源码。</p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-【Android】使用VPN实现抓包"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="2019/07/25/【Android】使用VPN实现抓包/">【Android】 使用VPN实现抓包</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="2019/07/25/【Android】使用VPN实现抓包/" class="article-date">
-	  <time datetime="2019-07-25T14:20:55.000Z" itemprop="datePublished">2019-07-25</time>
-	</a>
-
-      
-    <a class="article-category-link" href="categories/Android/">Android</a>
-
-      
-      
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="VPN抓包"><a href="#VPN抓包" class="headerlink" title="VPN抓包"></a>VPN抓包</h2><p>使用VPN技术可以直接获得网络三层IP报文，可以不可以基于此实现移动端抓包呢？肯定可以，Android已经有大批开源库基于该思路实现抓包。我们来学习下原理。</p>
-<h2 id="VpnService"><a href="#VpnService" class="headerlink" title="VpnService"></a>VpnService</h2><p>VpnService是开发Android VPN的基础，下面是<a href="https://developer.android.com/reference/android/net/VpnService" target="_blank" rel="noopener">官方文档</a>的阐释</p>
-<blockquote>
-<p>VpnService is a base class for applications to extend and build their own VPN solutions. In general, it creates a virtual network interface, configures addresses and routing rules, and returns a file descriptor to the application. Each read from the descriptor retrieves an outgoing packet which was routed to the interface. Each write to the descriptor injects an incoming packet just like it was received from the interface. The interface is running on Internet Protocol (IP), so packets are always started with IP headers. The application then completes a VPN connection by processing and exchanging packets with the remote server over a tunnel.</p>
-</blockquote>
-<p>上面的阐释的重点是：</p>
-<ul>
-<li>虚拟一个网卡</li>
-<li>返回文件描述符</li>
-<li>读写的内容是ip数据报</li>
-</ul>
-<p>首先推荐Android官方提供了的Example：<a href="https://android.googlesource.com/platform/development/+/master/samples/ToyVpn" target="_blank" rel="noopener">ToyVpn</a>。这个例子比较简单，实操一遍可以帮助理解VPN原理。</p>
-<p>初步搭一个vpn应用框架也可以参考<a href="https://www.tuicool.com/articles/uuiMje" target="_blank" rel="noopener">这篇文章</a>，这个仅仅是搭建了框架，功能（ip数据包的收发）则没有实现。</p>
-<h2 id="源码分析"><a href="#源码分析" class="headerlink" title="源码分析"></a>源码分析</h2><p>Android系统提供的API是VpnService，我们调用<code>establish()</code>方法之后会返回一个FD。然后我们读取该FD就能获得ip数据报文，通过发往VPN Server，再获得Server的回复报文之后再写入该FD，就可以实现VPN通信。</p>
-<h3 id="VpnService-establish"><a href="#VpnService-establish" class="headerlink" title="VpnService#establish()"></a>VpnService#establish()</h3><p>[-&gt; frameworks/base/core/java/android/net/VpnService.java]</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Create a VPN interface using the parameters supplied to this</span></span><br><span class="line"><span class="comment">* builder. The interface works on IP packets, and a file descriptor</span></span><br><span class="line"><span class="comment">* is returned for the application to access them. Each read</span></span><br><span class="line"><span class="comment">* retrieves an outgoing packet which was routed to the interface.</span></span><br><span class="line"><span class="comment">* Each write injects an incoming packet just like it was received</span></span><br><span class="line"><span class="comment">* from the interface. The file descriptor is put into non-blocking</span></span><br><span class="line"><span class="comment">* mode by default to avoid blocking Java threads. To use the file</span></span><br><span class="line"><span class="comment">* descriptor completely in native space, see</span></span><br><span class="line"><span class="comment">* &#123;<span class="doctag">@link</span> ParcelFileDescriptor#detachFd()&#125;. The application MUST</span></span><br><span class="line"><span class="comment">* close the file descriptor when the VPN connection is terminated.</span></span><br><span class="line"><span class="comment">* The VPN interface will be removed and the network will be</span></span><br><span class="line"><span class="comment">* restored by the system automatically.</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">* &lt;p&gt;To avoid conflicts, there can be only one active VPN interface</span></span><br><span class="line"><span class="comment">* at the same time. Usually network parameters are never changed</span></span><br><span class="line"><span class="comment">* during the lifetime of a VPN connection. It is also common for an</span></span><br><span class="line"><span class="comment">* application to create a new file descriptor after closing the</span></span><br><span class="line"><span class="comment">* previous one. However, it is rare but not impossible to have two</span></span><br><span class="line"><span class="comment">* interfaces while performing a seamless handover. In this case, the</span></span><br><span class="line"><span class="comment">* old interface will be deactivated when the new one is created</span></span><br><span class="line"><span class="comment">* successfully. Both file descriptors are valid but now outgoing</span></span><br><span class="line"><span class="comment">* packets will be routed to the new interface. Therefore, after</span></span><br><span class="line"><span class="comment">* draining the old file descriptor, the application MUST close it</span></span><br><span class="line"><span class="comment">* and start using the new file descriptor. If the new interface</span></span><br><span class="line"><span class="comment">* cannot be created, the existing interface and its file descriptor</span></span><br><span class="line"><span class="comment">* remain untouched.</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">* &lt;p&gt;An exception will be thrown if the interface cannot be created</span></span><br><span class="line"><span class="comment">* for any reason. However, this method returns &#123;<span class="doctag">@code</span> null&#125; if the</span></span><br><span class="line"><span class="comment">* application is not prepared or is revoked. This helps solve</span></span><br><span class="line"><span class="comment">* possible race conditions between other VPN applications.</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">* <span class="doctag">@return</span> &#123;<span class="doctag">@link</span> ParcelFileDescriptor&#125; of the VPN interface, or</span></span><br><span class="line"><span class="comment">*         &#123;<span class="doctag">@code</span> null&#125; if the application is not prepared.</span></span><br><span class="line"><span class="comment">* <span class="doctag">@throws</span> IllegalArgumentException if a parameter is not accepted</span></span><br><span class="line"><span class="comment">*         by the operating system.</span></span><br><span class="line"><span class="comment">* <span class="doctag">@throws</span> IllegalStateException if a parameter cannot be applied</span></span><br><span class="line"><span class="comment">*         by the operating system.</span></span><br><span class="line"><span class="comment">* <span class="doctag">@throws</span> SecurityException if the service is not properly declared</span></span><br><span class="line"><span class="comment">*         in &#123;<span class="doctag">@code</span> AndroidManifest.xml&#125;.</span></span><br><span class="line"><span class="comment">* <span class="doctag">@see</span> VpnService</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@Nullable</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ParcelFileDescriptor <span class="title">establish</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   mConfig.addresses = mAddresses;</span><br><span class="line">   mConfig.routes = mRoutes;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">try</span> &#123;</span><br><span class="line">       <span class="keyword">return</span> getService().establishVpn(mConfig);</span><br><span class="line">   &#125; <span class="keyword">catch</span> (RemoteException e) &#123;</span><br><span class="line">       <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(e);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Use IConnectivityManager since those methods are hidden and not</span></span><br><span class="line"><span class="comment">* available in ConnectivityManager.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> IConnectivityManager <span class="title">getService</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> IConnectivityManager.Stub.asInterface(</span><br><span class="line">          ServiceManager.getService(Context.CONNECTIVITY_SERVICE));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>其实是调用了ConnectivityService 这个系统服务的 <code>establishVpn(mConfig)</code>方法。</p>
-<h3 id="ConnectivityService-establishVpn"><a href="#ConnectivityService-establishVpn" class="headerlink" title="ConnectivityService#establishVpn()"></a>ConnectivityService#establishVpn()</h3><p>[-&gt; frameworks/base/services/core/java/com/android/server/ConnectivityService.java]</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">protected</span> <span class="keyword">final</span> SparseArray&lt;Vpn&gt; mVpns = <span class="keyword">new</span> SparseArray&lt;&gt;();</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * Configure a TUN interface and return its file descriptor. Parameters</span></span><br><span class="line"><span class="comment">  * are encoded and opaque to this class. This method is used by VpnBuilder</span></span><br><span class="line"><span class="comment">  * and not available in ConnectivityManager. Permissions are checked in</span></span><br><span class="line"><span class="comment">  * Vpn class.</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@hide</span></span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="meta">@Override</span></span><br><span class="line"> <span class="function"><span class="keyword">public</span> ParcelFileDescriptor <span class="title">establishVpn</span><span class="params">(VpnConfig config)</span> </span>&#123;</span><br><span class="line">     <span class="keyword">int</span> user = UserHandle.getUserId(Binder.getCallingUid());</span><br><span class="line">     <span class="keyword">synchronized</span> (mVpns) &#123;</span><br><span class="line">         throwIfLockdownEnabled();</span><br><span class="line">         <span class="comment">// mVpns其实是个Vpn数组</span></span><br><span class="line">         <span class="keyword">return</span> mVpns.get(user).establish(config);</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<h3 id="Vpn-establish"><a href="#Vpn-establish" class="headerlink" title="Vpn#establish()"></a>Vpn#establish()</h3><p>[-&gt; frameworks/base/services/core/java/com/android/server/connectivity/Vpn.java]</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Establish a VPN network and return the file descriptor of the VPN interface. This methods</span></span><br><span class="line"><span class="comment"> * returns &#123;<span class="doctag">@code</span> null&#125; if the application is revoked or not prepared.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> config The parameters to configure the network.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> The file descriptor of the VPN interface.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> ParcelFileDescriptor <span class="title">establish</span><span class="params">(VpnConfig config)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// Check if the caller is already prepared.</span></span><br><span class="line">    UserManager mgr = UserManager.get(mContext);</span><br><span class="line">    <span class="keyword">if</span> (Binder.getCallingUid() != mOwnerUID) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// Check to ensure consent hasn't been revoked since we were prepared.</span></span><br><span class="line">    <span class="keyword">if</span> (!isVpnUserPreConsented(mPackage)) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// Check if the service is properly declared.</span></span><br><span class="line">    Intent intent = <span class="keyword">new</span> Intent(VpnConfig.SERVICE_INTERFACE);</span><br><span class="line">    intent.setClassName(mPackage, config.user);</span><br><span class="line">    <span class="keyword">long</span> token = Binder.clearCallingIdentity();</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// Restricted users are not allowed to create VPNs, they are tied to Owner</span></span><br><span class="line">        UserInfo user = mgr.getUserInfo(mUserHandle);</span><br><span class="line">        <span class="keyword">if</span> (user.isRestricted()) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> SecurityException(<span class="string">"Restricted users cannot establish VPNs"</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        ResolveInfo info = AppGlobals.getPackageManager().resolveService(intent,</span><br><span class="line">                <span class="keyword">null</span>, <span class="number">0</span>, mUserHandle);</span><br><span class="line">        <span class="keyword">if</span> (info == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> SecurityException(<span class="string">"Cannot find "</span> + config.user);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (!BIND_VPN_SERVICE.equals(info.serviceInfo.permission)) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> SecurityException(config.user + <span class="string">" does not require "</span> + BIND_VPN_SERVICE);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (RemoteException e) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> SecurityException(<span class="string">"Cannot find "</span> + config.user);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        Binder.restoreCallingIdentity(token);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Save the old config in case we need to go back.</span></span><br><span class="line">    VpnConfig oldConfig = mConfig;</span><br><span class="line">    String oldInterface = mInterface;</span><br><span class="line">    Connection oldConnection = mConnection;</span><br><span class="line">    NetworkAgent oldNetworkAgent = mNetworkAgent;</span><br><span class="line">    Set&lt;UidRange&gt; oldUsers = mNetworkCapabilities.getUids();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 调用jniCreate方法创建了一个FD</span></span><br><span class="line">    <span class="comment">// Configure the interface. Abort if any of these steps fails.</span></span><br><span class="line">    ParcelFileDescriptor tun = ParcelFileDescriptor.adoptFd(jniCreate(config.mtu));</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        String interfaze = jniGetName(tun.getFd());</span><br><span class="line"></span><br><span class="line">        <span class="comment">// TEMP use the old jni calls until there is support for netd address setting</span></span><br><span class="line">        StringBuilder builder = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">for</span> (LinkAddress address : config.addresses) &#123;</span><br><span class="line">            builder.append(<span class="string">" "</span>);</span><br><span class="line">            builder.append(address);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (jniSetAddresses(interfaze, builder.toString()) &lt; <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"At least one address must be specified"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        Connection connection = <span class="keyword">new</span> Connection();</span><br><span class="line">        <span class="keyword">if</span> (!mContext.bindServiceAsUser(intent, connection,</span><br><span class="line">                Context.BIND_AUTO_CREATE | Context.BIND_FOREGROUND_SERVICE,</span><br><span class="line">                <span class="keyword">new</span> UserHandle(mUserHandle))) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(<span class="string">"Cannot bind "</span> + config.user);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        mConnection = connection;</span><br><span class="line">        mInterface = interfaze;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// Fill more values.</span></span><br><span class="line">        config.user = mPackage;</span><br><span class="line">        config.interfaze = mInterface;</span><br><span class="line">        config.startTime = SystemClock.elapsedRealtime();</span><br><span class="line">        mConfig = config;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// Set up forwarding and DNS rules.</span></span><br><span class="line">        <span class="comment">// First attempt to do a seamless handover that only changes the interface name and</span></span><br><span class="line">        <span class="comment">// parameters. If that fails, disconnect.</span></span><br><span class="line">        <span class="keyword">if</span> (oldConfig != <span class="keyword">null</span></span><br><span class="line">                &amp;&amp; updateLinkPropertiesInPlaceIfPossible(mNetworkAgent, oldConfig)) &#123;</span><br><span class="line">            <span class="comment">// Keep mNetworkAgent unchanged</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            mNetworkAgent = <span class="keyword">null</span>;</span><br><span class="line">            updateState(DetailedState.CONNECTING, <span class="string">"establish"</span>);</span><br><span class="line">            <span class="comment">// Set up forwarding and DNS rules.</span></span><br><span class="line">            agentConnect();</span><br><span class="line">            <span class="comment">// Remove the old tun's user forwarding rules</span></span><br><span class="line">            <span class="comment">// The new tun's user rules have already been added above so they will take over</span></span><br><span class="line">            <span class="comment">// as rules are deleted. This prevents data leakage as the rules are moved over.</span></span><br><span class="line">            agentDisconnect(oldNetworkAgent);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (oldConnection != <span class="keyword">null</span>) &#123;</span><br><span class="line">            mContext.unbindService(oldConnection);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (oldInterface != <span class="keyword">null</span> &amp;&amp; !oldInterface.equals(interfaze)) &#123;</span><br><span class="line">            jniReset(oldInterface);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            IoUtils.setBlocking(tun.getFileDescriptor(), config.blocking);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(</span><br><span class="line">                    <span class="string">"Cannot set tunnel's fd as blocking="</span> + config.blocking, e);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (RuntimeException e) &#123;</span><br><span class="line">        IoUtils.closeQuietly(tun);</span><br><span class="line">        <span class="comment">// If this is not seamless handover, disconnect partially-established network when error</span></span><br><span class="line">        <span class="comment">// occurs.</span></span><br><span class="line">        <span class="keyword">if</span> (oldNetworkAgent != mNetworkAgent) &#123;</span><br><span class="line">            agentDisconnect();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// restore old state</span></span><br><span class="line">        mConfig = oldConfig;</span><br><span class="line">        mConnection = oldConnection;</span><br><span class="line">        mNetworkCapabilities.setUids(oldUsers);</span><br><span class="line">        mNetworkAgent = oldNetworkAgent;</span><br><span class="line">        mInterface = oldInterface;</span><br><span class="line">        <span class="keyword">throw</span> e;</span><br><span class="line">    &#125;</span><br><span class="line">    Log.i(TAG, <span class="string">"Established by "</span> + config.user + <span class="string">" on "</span> + mInterface);</span><br><span class="line">    <span class="keyword">return</span> tun;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><code>establish()</code>方法除了权限校验之外，主要是通过<code>jniCreate</code>方法创建了一个FD并返回，这个FD其实就是tun设备。而此处的<code>jniCreate</code>方法是native方法，如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">native</span> <span class="keyword">int</span> <span class="title">jniCreate</span><span class="params">(<span class="keyword">int</span> mtu)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">native</span> String <span class="title">jniGetName</span><span class="params">(<span class="keyword">int</span> tun)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">native</span> <span class="keyword">int</span> <span class="title">jniSetAddresses</span><span class="params">(String interfaze, String addresses)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title">jniReset</span><span class="params">(String interfaze)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">native</span> <span class="keyword">int</span> <span class="title">jniCheck</span><span class="params">(String interfaze)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">native</span> <span class="keyword">boolean</span> <span class="title">jniAddAddress</span><span class="params">(String interfaze, String address, <span class="keyword">int</span> prefixLen)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">native</span> <span class="keyword">boolean</span> <span class="title">jniDelAddress</span><span class="params">(String interfaze, String address, <span class="keyword">int</span> prefixLen)</span></span>;</span><br></pre></td></tr></table></figure>
-<p>可以看到一系列的native方法，这些方法都位于<code>com_android_server_connectivity_Vpn.cpp</code>中：</p>
-<h3 id="jniCreate"><a href="#jniCreate" class="headerlink" title="jniCreate()"></a>jniCreate()</h3><p>[-&gt; frameworks/base/services/core/jni/com_android_server_connectivity_Vpn.cpp]</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> JNINativeMethod gMethods[] = &#123;</span><br><span class="line">    &#123;<span class="string">"jniCreate"</span>, <span class="string">"(I)I"</span>, (<span class="keyword">void</span> *)create&#125;,</span><br><span class="line">    &#123;<span class="string">"jniGetName"</span>, <span class="string">"(I)Ljava/lang/String;"</span>, (<span class="keyword">void</span> *)getName&#125;,</span><br><span class="line">    &#123;<span class="string">"jniSetAddresses"</span>, <span class="string">"(Ljava/lang/String;Ljava/lang/String;)I"</span>, (<span class="keyword">void</span> *)setAddresses&#125;,</span><br><span class="line">    &#123;<span class="string">"jniReset"</span>, <span class="string">"(Ljava/lang/String;)V"</span>, (<span class="keyword">void</span> *)reset&#125;,</span><br><span class="line">    &#123;<span class="string">"jniCheck"</span>, <span class="string">"(Ljava/lang/String;)I"</span>, (<span class="keyword">void</span> *)check&#125;,</span><br><span class="line">    &#123;<span class="string">"jniAddAddress"</span>, <span class="string">"(Ljava/lang/String;Ljava/lang/String;I)Z"</span>, (<span class="keyword">void</span> *)addAddress&#125;,</span><br><span class="line">    &#123;<span class="string">"jniDelAddress"</span>, <span class="string">"(Ljava/lang/String;Ljava/lang/String;I)Z"</span>, (<span class="keyword">void</span> *)delAddress&#125;,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建tun设备</span></span><br><span class="line"><span class="function"><span class="keyword">static</span> jint <span class="title">create</span><span class="params">(JNIEnv *env, jobject <span class="comment">/* thiz */</span>, jint mtu)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> tun = create_interface(mtu);</span><br><span class="line">    <span class="keyword">if</span> (tun &lt; <span class="number">0</span>) &#123;</span><br><span class="line">        throwException(env, tun, <span class="string">"Cannot create interface"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> tun;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">create_interface</span><span class="params">(<span class="keyword">int</span> mtu)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> tun = open(<span class="string">"/dev/tun"</span>, O_RDWR | O_NONBLOCK | O_CLOEXEC);</span><br><span class="line"></span><br><span class="line">    ifreq ifr4;</span><br><span class="line">    <span class="built_in">memset</span>(&amp;ifr4, <span class="number">0</span>, <span class="keyword">sizeof</span>(ifr4));</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Allocate interface.</span></span><br><span class="line">    ifr4.ifr_flags = IFF_TUN | IFF_NO_PI;</span><br><span class="line">    <span class="keyword">if</span> (ioctl(tun, TUNSETIFF, &amp;ifr4)) &#123;</span><br><span class="line">        ALOGE(<span class="string">"Cannot allocate TUN: %s"</span>, strerror(errno));</span><br><span class="line">        <span class="keyword">goto</span> error;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Activate interface.</span></span><br><span class="line">    ifr4.ifr_flags = IFF_UP;</span><br><span class="line">    <span class="keyword">if</span> (ioctl(inet4, SIOCSIFFLAGS, &amp;ifr4)) &#123;</span><br><span class="line">        ALOGE(<span class="string">"Cannot activate %s: %s"</span>, ifr4.ifr_name, strerror(errno));</span><br><span class="line">        <span class="keyword">goto</span> error;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Set MTU if it is specified.</span></span><br><span class="line">    ifr4.ifr_mtu = mtu;</span><br><span class="line">    <span class="keyword">if</span> (mtu &gt; <span class="number">0</span> &amp;&amp; ioctl(inet4, SIOCSIFMTU, &amp;ifr4)) &#123;</span><br><span class="line">        ALOGE(<span class="string">"Cannot set MTU on %s: %s"</span>, ifr4.ifr_name, strerror(errno));</span><br><span class="line">        <span class="keyword">goto</span> error;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> tun;</span><br><span class="line"></span><br><span class="line">error:</span><br><span class="line">    close(tun);</span><br><span class="line">    <span class="keyword">return</span> SYSTEM_ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这里就很明显能看到最终调用的是<code>create_interface</code>方法，该方法其实就是打开<code>/dev/tun</code>文件，然后设置一下MTU并返回这个FD。</p>
-<p><code>/dev/tun</code>文件就是Linux中的TUN设备。</p>
-<h2 id="TUN-TAP是什么"><a href="#TUN-TAP是什么" class="headerlink" title="TUN/TAP是什么"></a>TUN/TAP是什么</h2><p>tap/tun 是 Linux 内核 2.4.x 版本之后实现的虚拟网络设备，不同于物理网卡，tap/tun 虚拟网卡完全由软件来实现，功能和硬件实现完全没有差别，它们都属于网络设备，都可以配置 IP，都归 Linux 网络设备管理模块统一管理。<br><strong>TAP</strong> 设备与 <strong>TUN</strong> 设备都是虚拟网络设备，工作方式完全相同，但它们的工作层次不太一样：</p>
-<ul>
-<li>tap 是一个二层设备（或者以太网设备），只能处理二层的以太网帧；</li>
-<li>tun 是一个点对点的三层设备（或网络层设备），只能处理三层的 IP 数据包。</li>
-</ul>
-<p>作为网络设备，tap/tun 也需要配套相应的驱动程序才能工作。tap/tun 驱动程序包括两个部分，一个是字符设备驱动，一个是网卡驱动。这两部分驱动程序分工不太一样，字符驱动负责数据包在内核空间和用户空间的传送，网卡驱动负责数据包在 TCP/IP 网络协议栈上的传输和处理。</p>
-<h3 id="字符驱动-内核空间和用户空间的数据传输"><a href="#字符驱动-内核空间和用户空间的数据传输" class="headerlink" title="字符驱动 - 内核空间和用户空间的数据传输"></a>字符驱动 - 内核空间和用户空间的数据传输</h3><p>在 Linux 中，用户空间和内核空间的数据传输有多种方式，字符设备就是其中的一种。tap/tun 通过驱动程序和一个与之关联的字符设备，来实现用户空间和内核空间的通信接口。</p>
-<p>在 Linux 内核 2.6.x 之后的版本中，tap/tun 对应的字符设备文件分别为：</p>
-<ul>
-<li>tap：/dev/tap0</li>
-<li>tun：/dev/tun0</li>
-</ul>
-<p>设备文件即充当了用户空间和内核空间通信的接口。当应用程序打开设备文件时，驱动程序就会创建并注册相应的虚拟设备接口，一般以 <code>tunX</code> 或 <code>tapX</code> 命名。当应用程序关闭文件时，驱动也会自动删除 <code>tunX</code> 和 <code>tapX</code> 设备，还会删除已经建立起来的路由等信息。</p>
-<p>tap/tun 设备文件就像一个管道，一端连接着用户空间，一端连接着内核空间。当用户程序向文件 <code>/dev/net/tun</code> 或 <code>/dev/tap0</code> 写数据时，内核就可以从对应的 <code>tunX</code> 或 <code>tapX</code> 接口读到数据，反之，内核可以通过相反的方式向用户程序发送数据。</p>
-<h3 id="网卡驱动-数据包在-TCP-IP-协议栈的传输"><a href="#网卡驱动-数据包在-TCP-IP-协议栈的传输" class="headerlink" title="网卡驱动 - 数据包在 TCP/IP 协议栈的传输"></a>网卡驱动 - 数据包在 TCP/IP 协议栈的传输</h3><p>参考<a href="https://blog.kghost.info/2013/03/27/linux-network-tun/" target="_blank" rel="noopener">网络虚拟化技术（二）: TUN/TAP MACVLAN MACVTAP</a>，先来看看物理网卡是如何工作的：</p>
-<p><img src="/gallery/android_common/tunortap-eth0.png" alt="真实网卡的工作机制"></p>
-<p>普通网卡通过网线收发数据包，所有物理网卡收到的包会交给内核的 Network Stack 处理，然后通过 Socket API 通知给用户程序。</p>
-<p>但是 TUN 设备通过一个<code>/dev/tunX</code>文件收发数据包。所有对该文件的写操作会通过 TUN 设备转换成一个数据包送给内核；当内核发送一个包给 TUN 设备时，通过读这个文件可以拿到包的内容。</p>
-<p>如果我们使用 TUN 设备搭建一个基于 UDP VPN，那么整个处理过程就是这样：</p>
-<p><img src="/gallery/android_common/tunortap-tun.png" alt="基于 UDP 的 VPN 工作机制"></p>
-<p>数据包会通过内核网络栈两次。但是经过 App 的处理后，数据包可能已经加密，并且原有的 ip 头被封装在 udp 内部，所以第二次通过网络栈内核看到的添加了新的IP头和UDP头的数据包。</p>
-<p><img src="/gallery/android_common/090751088583813.jpg" alt="第二次进入网络栈内核后的IP数据包变化"></p>
-<p>tap/tun 通过实现相应的网卡驱动程序来和网络协议栈通信。一般的流程和物理网卡和协议栈的交互流程是一样的，不同的是物理网卡一端是连接物理网络，而 tap/tun 虚拟网卡一般连接到用户空间。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">+----------------------------------------------------------------+</span><br><span class="line">|                                                                |</span><br><span class="line">|  +--------------------+      +--------------------+            |</span><br><span class="line">|  | User Application A |      | User Application B |&lt;-----+     |</span><br><span class="line">|  +--------------------+      +--------------------+      |     |</span><br><span class="line">|               | <span class="number">1</span>                    | <span class="number">5</span>                 |     |</span><br><span class="line">|...............|......................|...................|.....|</span><br><span class="line">|               ↓                      ↓                   |     |</span><br><span class="line">|         +----------+           +----------+              |     |</span><br><span class="line">|         | socket A |           | socket B |              |     |</span><br><span class="line">|         +----------+           +----------+              |     |</span><br><span class="line">|                 | <span class="number">2</span>               | <span class="number">6</span>                    |     |</span><br><span class="line">|.................|.................|......................|.....|</span><br><span class="line">|                 ↓                 ↓                      |     |</span><br><span class="line">|             +------------------------+                 <span class="number">4</span> |     |</span><br><span class="line">|             | Newwork Protocol Stack |                   |     |</span><br><span class="line">|             +------------------------+                   |     |</span><br><span class="line">|                | <span class="number">7</span>                 | <span class="number">3</span>                   |     |</span><br><span class="line">|................|...................|.....................|.....|</span><br><span class="line">|                ↓                   ↓                     |     |</span><br><span class="line">|        +----------------+    +----------------+          |     |</span><br><span class="line">|        |      eth0      |    |      tun0      |          |     |</span><br><span class="line">|        +----------------+    +----------------+          |     |</span><br><span class="line">|    <span class="number">10.32</span>.0.11  |                   |   <span class="number">192.168</span>.3.11      |     |</span><br><span class="line">|                | <span class="number">8</span>                 +---------------------+     |</span><br><span class="line">|                |                                               |</span><br><span class="line">+----------------|-----------------------------------------------+</span><br><span class="line">                 ↓</span><br><span class="line">         Physical Network</span><br></pre></td></tr></table></figure>
-<p>上图中有两个应用程序A和B，都在用户层，而其它的socket、协议栈（Newwork Protocol Stack）和网络设备（eth0和tun0）部分都在内核层，其实socket是协议栈的一部分，这里分开来的目的是为了看的更直观。</p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-Android ADB原理探究"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="2019/06/07/Android ADB原理探究/">【Android】ADB工具原理探究</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="2019/06/07/Android ADB原理探究/" class="article-date">
-	  <time datetime="2019-06-07T14:20:55.000Z" itemprop="datePublished">2019-06-07</time>
-	</a>
-
-      
-    <a class="article-category-link" href="categories/Android/">Android</a>
-
-      
-      
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="ADB简介"><a href="#ADB简介" class="headerlink" title="ADB简介"></a>ADB简介</h1><blockquote class="pullquote right"><p><img src="/gallery/android_common/ADB-feature.png" alt=""></p>
-</blockquote>
-<p>Android Debug Bridge (adb) 是一个Android的命令行工具。可以用来连接模拟器或实际的移动设备。比如 adb logcat, adb shell。Dalvik Debug Monitor Server(DDMS) 后台也是运行的adb来实现监控调试移动设备。</p>
-<p>总体而言，adb有两个用途：</p>
-<ul>
-<li><strong>监控连接设备</strong> ：adb会监控所有已经连接设备(包括模拟器)，譬如设备所处的状态：ONLINE，OFFLINE, BOOTLOADER或RECOVERY。</li>
-<li><strong>提供操作命令</strong> ：adb提供了很多命令(<code>adb shell</code>，<code>adb pull</code>)，来实现对设备的操控。这些操作命令在adb的体系里面，都称为“服务”。</li>
-</ul>
-<h1 id="ADB-实现原理"><a href="#ADB-实现原理" class="headerlink" title="ADB 实现原理"></a>ADB 实现原理</h1><p>Adb的全称为 Android Debug Bridge：Android调试桥，下图为Android官方对adb的介绍：</p>
-<p><img src="/gallery/android_common/adb-introduce.png" alt=""></p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-Android Doze模式识别"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="2019/05/25/Android Doze模式识别/">【Android】Doze模式识别与检测</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="2019/05/25/Android Doze模式识别/" class="article-date">
-	  <time datetime="2019-05-25T14:20:55.000Z" itemprop="datePublished">2019-05-25</time>
-	</a>
-
-      
-    <a class="article-category-link" href="categories/Android/">Android</a>
-
-      
-      
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>从 Android 6.0（API 级别 23）开始，Android 引入了两个省电功能：Doze模式（官方翻译为低电耗模式）和 App Standby模式（官方翻译为应用待机模式），可通过管理应用在设备未连接至电源时的行为方式为用户延长电池寿命。<strong>Doze模式</strong>通过在设备长时间处于闲置状态时推迟应用的后台 CPU 和网络 Activity 来减少电池消耗。<strong>App Standby模式</strong>可推迟用户近期未与之交互的应用的后台网络 Activity。</p>
-<h2 id="Doze模式"><a href="#Doze模式" class="headerlink" title="Doze模式"></a>Doze模式</h2><p>满足以下条件的设备会进入Doze低电耗模式。</p>
-<ul>
-<li>用户设备未插接电源</li>
-<li>处于静止状态一段时间</li>
-<li>屏幕关闭 </li>
-</ul>
-<p>在低电耗模式下，系统会尝试通过限制应用对网络和 CPU 密集型服务的访问来节省电量。 这还可以阻止应用访问网络并推迟其作业、同步和标准闹铃。</p>
-<p>系统会定期退出Doze低电耗模式一会儿，好让应用完成其已推迟的 Activity。在此维护时段内，系统会运行所有待定同步、作业和闹铃并允许应用访问网络。</p>
-<p><img src="/gallery/android_common/doze.png" alt="图 1. 低电耗模式提供了定期维护时段，可供应用使用网络并处理待定 Activity。"></p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-IPv6安全浅析"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="2019/03/13/IPv6安全浅析/">IPv6安全浅析</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="2019/03/13/IPv6安全浅析/" class="article-date">
-	  <time datetime="2019-03-13T03:51:55.000Z" itemprop="datePublished">2019-03-13</time>
-	</a>
-
-      
-    <a class="article-category-link" href="categories/IPv6/">IPv6</a>
-
-      
-      
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>原文链接 ：<a href="https://www.huawei.com/ilink/en/download/HW_079734" target="_blank" rel="noopener">IPv6安全浅析 - Huawei - 2010.12 第52期</a> </p>
-</blockquote>
-<p>“缺乏安全性是互联网天生的弱点，这与是否采用IPv6关系不大。事实上，IPv6并没有引入新的安全问题，反而由于IPSec的引入以及发送设备采用永久性IP地址而解决了网络层溯源难题，给网络安全提供了根本的解决途径，有望实现端到端安全性。”中国电信科技委主任韦乐平这样评价IPv6安全。</p>
-<h2 id="IPv6协议设计的安全考虑"><a href="#IPv6协议设计的安全考虑" class="headerlink" title="IPv6协议设计的安全考虑"></a>IPv6协议设计的安全考虑</h2><p>从协议的角度，IPv6作为IPv4的下一代，与IPv4同属于网络层的传输协议。然而，协议上最核心、最本质的差别就是地址空间的扩大，由IPv4下的32位地址空间变为128位的地址空间，这正是IPv6被选作新网络的承载协议并逐渐商用部署的根本驱动力。IPv6拥有如此巨大的地址空间，甚至可以为每一粒沙子都分配一个IP地址。而IPv4网络的地址分配是不规则的，并且很多时候是一个地址被多台主机共用。使用IPv6之后，我们能够将每个地址指定给一个责任体，就像给每个人一个身份证号，每辆车一个车牌号一样，每个地址都是唯一的；IPv6的地址分配采用逐级、层次化的结构，这就使得追踪定位、攻击溯源有了很大的改善。</p>
-<p>另外，IPv6提出了新的地址生成方式——密码生成地址。密码生成地址与公私钥对绑定，保证地址不能被他人伪造。这如同汽车的车牌印上了指纹，别人不可能伪造这样的车牌，因为指纹造不了假。在IPv6协议设计之初，IP Sec（IPSecurity）协议族中的AH（AuthenticationHeader，报文认证头）和ESP（EncapsulationSecurity Payload，报文封装安全载荷）就内嵌到协议栈中，作为IPv6的扩展头出现在IP报文中，提供完整性、保密性和源认保护，这无疑是从协议上较大地提升安全性。</p>
-<p>整体上看，IPv4协议的设计没有任何的安全考虑，特别是报文地址的伪造与欺骗使得无法对网络进行有效的监管和控制。因此，当出现网络攻击与安全威胁时，我们只能围绕攻击事件做好事前、事中和事后的防范、检测和过滤防御，缺乏有效的技术支撑手段，无法对攻击者形成真正的打击和管控。</p>
-<p>而在IPv6网络的安全体系下，用户、报文和攻击可以一一对应，用户对自己的任何行为都必须负责，具有不可否认性，所以IPv6建立起严密的围绕攻击者的管控机制，实现对用户行为的安全监控。</p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-HTTPS原理与证书"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="2018/10/30/HTTPS原理与证书/">HTTPS原理与证书生成</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="2018/10/30/HTTPS原理与证书/" class="article-date">
-	  <time datetime="2018-10-30T03:08:00.000Z" itemprop="datePublished">2018-10-30</time>
-	</a>
-
-      
-    <a class="article-category-link" href="categories/Web/">Web</a>
-
-      
-      
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="HTTPS"><a href="#HTTPS" class="headerlink" title="HTTPS"></a>HTTPS</h2><p>HTTPS与HTTP是什么关系呢？我们可以对比下HTTP与HTTPS的请求过程：</p>
-<p><img src="/gallery/common/http-state.png" alt="HTTP请求过程"></p>
-<p>HTTPS 在 TCP 和 HTTP 之间增加了 TLS（Transport Layer Security，传输层安全），提供了<strong>内容加密</strong>、<strong>身份认证</strong>和<strong>数据完整性</strong>三大功能。</p>
-<p><img src="/gallery/common/https-state.png" alt="HTTPS请求过程"></p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
+<!-- Table of Contents Template-->
 
 
   
@@ -861,65 +377,8 @@
   
 </article>
 
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-CPU Cache与缓存行"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="2018/09/09/CPU Cache与缓存行/">CPU Cache与缓存行</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="2018/09/09/CPU Cache与缓存行/" class="article-date">
-	  <time datetime="2018-09-09T14:20:55.000Z" itemprop="datePublished">2018-09-09</time>
-	</a>
-
-      
-    <a class="article-category-link" href="categories/Java/">Java</a>
-
-      
-      
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>先看下面这两个循环遍历哪个快？</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] array = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">64</span> * <span class="number">1024</span>][<span class="number">1024</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 横向遍历</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">64</span> * <span class="number">1024</span>; i ++)</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">1024</span>; j ++)</span><br><span class="line">        array[i][j] ++;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 纵向遍历</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">1024</span>; i ++)</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">64</span> * <span class="number">1024</span>; j ++)</span><br><span class="line">        array[j][i] ++;</span><br></pre></td></tr></table></figure>
-<p>在CPU处理器参数为 2.3 GHz Intel Core i5 的Mac上的结果是：</p>
-<blockquote>
-<p>横向遍历:    80ms<br>纵向遍历:    2139ms</p>
-</blockquote>
-<p>横向遍历的 CPU cache 命中率高，所以它比纵向遍历约快这么多倍！</p>
-<p><a href="http://igoro.com/archive/gallery-of-processor-cache-effects/" target="_blank" rel="noopener">Gallery of Processor Cache Effects</a> 用 7 个源码示例生动的介绍 cache 原理，深入浅出！但是可能因操作系统的差异、编译器是否优化，以及近些年 cache 性能的提升，有些样例在 Mac 的效果与原文相差较大。</p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
 
 <!-- Table of Contents -->
-
-
-  
-
 
   <nav id="page-nav">
     
@@ -938,12 +397,12 @@
   <div class="container">
       	<div class="row">
 	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; 2013 - 2019 Magitour All Rights Reserved.</p>
+	      <p id="copyRightEn">Copyright &copy; 2023 Magitour All Rights Reserved.</p>
 	      
 	      
     		<p class="busuanzi_uv">
-				访客数 : <span id="busuanzi_value_site_uv"></span> |  
-				访问量 : <span id="busuanzi_value_site_pv"></span>
+				Visitors : <span id="busuanzi_value_site_uv"></span> |  
+				Visits : <span id="busuanzi_value_site_pv"></span>
 		    </p>
   		   
 		</div>
@@ -1033,12 +492,6 @@
 
 
 
-
-
-
-
-
-
 	<div style="display: none;">
     <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
   </div>
@@ -1068,12 +521,12 @@
       <div class="modal-body">
           <div style="margin:6px;">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
-              正文字号大小
+              Main Text Font Size
             </a>
           </div>
           <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
-            您已调整页面字体大小
+            You have adjusted the font size.
           </div>
         </div>
       
@@ -1081,12 +534,12 @@
 
           <div style="margin:6px;">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
-              夜间护眼模式
+              Dark Mode
             </a>
         </div>
           <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
           <div class="panel-body">
-            夜间模式已经开启，再次单击按钮即可关闭 
+            Dark mode on, click again to turn off
           </div>
         </div>
 
@@ -1098,7 +551,7 @@
             Magitour
           </div>
           <div class="panel-body">
-            Copyright © 2019 Mr.Seven All Rights Reserved.
+            Copyright © 2023 RBCC Group 2 All Rights Reserved.
           </div>
         </div>
       </div>
