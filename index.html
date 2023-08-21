@@ -240,51 +240,40 @@
   <div id="wrap">
   <div id="content" class="outer">
   <section id="main" style="float:none;">
-  <article id="post-Uber使用QUIC协议优化App网络性能"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
 
   <header class="article-header">
       
   <h1 class="thumb" itemprop="name">
-    <a class="article-title">post-Uber使用QUIC协议优化App网络性能</a>
+    <a href="archives/2023/Intro/" class="article-title">Welcome to Magitour: Where Your Dream Adventures Come to Life!</a>
   </h1>
-  
 
   </header>
     
   <div class="article-meta">
     
-  <a href="2019/12/02/Uber使用QUIC协议优化App网络性能/" class="article-date">
-    <time datetime="2019-12-02T03:08:00.000Z" itemprop="datePublished">2019-12-02</time>
+  <a class="article-date">
+    <time datetime="2023-08-21T011:02:00.000Z" itemprop="datePublished">2023-08-21</time>
   </a>
 
-      
   </div>
 
   <div class="article-entry" itemprop="articleBody">
     
   <blockquote>
-    <p><a></a></p>
+    <p>Wanna try something new?</p>
   </blockquote>
-  <p>Uber operates on a global scale across more than 600 cities, with our apps relying entirely on wireless connectivity from over 4,500 mobile carriers. To deliver the real-time performance expected from Uber’s users, our mobile apps require low-latency and highly reliable network communication. Unfortunately, the <a href="https://en.wikipedia.org/wiki/HTTP/2" target="_blank" rel="noopener">HTTP/2</a> stack fares poorly in dynamic, lossy wireless networks, and we learned that poor performance can often be traced directly to Transmission Control Protocol (TCP) implementations buried in OS kernels.</p>
-  <p>Uber在全球600个城市运营，我们的APP完全依赖于4500家移动网络运营商提供的无线网络服务。为了提供Uber用户期望的实时性能，我们的手机应用需要低延迟、高可用的网络通信。不幸的是，HTTP/2协议在动态、有损的无线网络中表现不佳，我们了解到低性能的原因通常被追溯定位到内核中的TCP实现。</p>
-  <p>To address these pain points, we adopted the <a href="https://en.wikipedia.org/wiki/QUIC" target="_blank" rel="noopener">QUIC protocol</a>, a stream-multiplexed modern transport protocol implemented over UDP, which enables us to better control the transport protocol performance. QUIC is currently being standardized by the <a href="https://www.ietf.org/" target="_blank" rel="noopener">Internet Engineering Task Force</a> (IETF) as <a href="https://github.com/quicwg" target="_blank" rel="noopener">HTTP/3</a>.</p>
-  <p>After thorough testing of QUIC, we concluded that integrating QUIC in our apps would fchroreduce the tail-end latencies compared to TCP. We witnessed a reduction of 10-30 percent in tail-end latencies for HTTPS traffic at scale in our rider and driver apps. In addition to improving the performance of our apps in low connectivity networks, QUIC gives us end-to-end control over the flow of packets in the user space.</p>
-  <p>In this article, we share our experiences optimizing TCP performance for Uber’s apps by moving to a network stack that supports the QUIC protocol.</p>
-    
-  <h2 id="State-of-the-Art-TCP">
-    <a href="#State-of-the-Art-TCP" class="headerlink" title="State of the Art: TCP"></a>
-    State of the Art: TCP
-  </h2>
-  <p>On today’s Internet, is the most widely adopted transport protocol for carrying HTTPS traffic. TCP provides a reliable byte stream, dealing with the complexities of network <a href="https://en.wikipedia.org/wiki/TCP_congestion_control" target="_blank" rel="noopener">congestion</a> and link layer <a href="https://tools.ietf.org/html/rfc2018" target="_blank" rel="noopener">losses</a>. The widespread use of TCP for HTTPS traffic is mainly attributed to ubiquity (almost every OS includes TCP), availability on a wide range of infrastructure, such as load balancers, HTTPS <a href="https://www.nginx.com/" target="_blank" rel="noopener">proxies</a>, and <a href="https://www.akamai.com/us/en/resources/content-distribution-network.jsp" target="_blank" rel="noopener">CDNs</a>, and it’s out-of-the-box functionality for most platforms and networks.</p>
-  <p>Most users access Uber’s services on the move, and the tail-end latencies of our applications running on TCP were far from meeting the requirements of the real-time nature of our HTTPS traffic. Specifically, users perceived high tail-end latencies across the world. In Figure 1, below, we plot the tail-end latencies of our HTTPS network calls across major cities:</p>
-  <p><img src="/gallery/common/image3-1068x531.png" alt="Figure 1. Tail-end latencies vary across the major cities where Uber operates."></p>
-  <p>Although the latencies in India and Brazil’s networks were worse than those in the US and UK, the tail-end latencies are significantly higher than the average latencies, even in the case of the US and UK.</p>
-    
-  </div>
-  <footer class="article-footer">  
-  </footer>
-  </div>
+  <p>At Magitour, we believe that every journey should be as unique as the individual embarking upon it. Our passion for exploration and our commitment to crafting exceptional travel experiences have led us to redefine the way you discover the world. As the Manager of Advertisement, I am thrilled to introduce you to the exciting realm of Magitour.</p>
+  <h4 id='about-us'>About Us</h4>
+  <p>Magitour is not just another travel company; we are your partners in turning travel dreams into reality. Our foundation rests on the idea that travel should be personal, enriching, and tailored to your interests. With a team of dedicated travel enthusiasts and cutting-edge technology, we&#39;ve created a seamless platform that unveils a world of possibilities, ensuring that each journey is a masterpiece of discovery.</p>
+  <h4 id='our-product'>Our Product</h4>
+  <p>Picture this: You&#39;re a lover of history and art, with a secret longing for coastal vistas. Or perhaps you&#39;re an adrenaline junkie seeking the thrill of mountain peaks and hidden trails. Magitour&#39;s innovative platform combines your unique preferences, passions, and desired destinations to curate the perfect travel experience, just for you. Through a blend of data-driven algorithms and meticulous human curation, we present you with a selection of randomly generated tour choices that align with your interests. It&#39;s the excitement of a lucky draw combined with the assurance of personalized travel – a true revolution in the way you explore the world.</p>
+  <h4 id='our-vision'>Our Vision</h4>
+  <p>At Magitour, our vision extends beyond being a travel company; we aspire to be your travel soulmates. Our goal is to create moments that stay etched in your memory, to transform vacations into life-defining adventures. We dream of a world where wanderlust knows no bounds, where travel is a symphony of exploration and connection. We are dedicated to harnessing the power of technology to continuously enhance and refine your travel experiences, ensuring that each journey is a testament to your unique spirit.</p>
+  <p>As the Manager of Advertisement, I invite you to join us on this exhilarating journey of discovery. Whether you&#39;re a solo traveler seeking serenity, a couple yearning for romantic getaways, or a family in search of bonding moments, Magitour is here to make your dreams take flight. Explore without limits, discover without compromise – this is the essence of Magitour.</p>
+  <p>Thank you for choosing us to be a part of your travel narrative.</p>
+  <p>Sincerely,<br>
+  Magitour</p>
   
 </article>
 
@@ -294,19 +283,18 @@
   <div id="wrap">
   <div id="content" class="outer">
   <section id="main" style="float:none;">
-  <article id="IPv6安全浅析"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
 
   <header class="article-header">
+
   <h1 class="thumb" itemprop="name">
-    <a class="article-title">Breaking News | Magitour</a>
+    <a href="archives/2023/Breaking/" class="article-title">Breaking News</a>
   </h1>
   </header>
     
   <div class="article-meta">
-  <!-- 设定文章跳转超链接，此处设置新文件夹"articles"储存，文件夹以文章名命名，下储存index.html文件为正文 -->
-  <!-- <a href="articles/.../" class="article-date"></a> -->
-  <a href="articles/Breaking/" class="article-date">
+
+  <a class="article-date">
     <time datetime="2023-08-20T21:08:00.000Z" itemprop="datePublished">2023-08-20</time>
   </a>
   </div>
