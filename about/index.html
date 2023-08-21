@@ -134,56 +134,52 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
-           
-              
-                <div class="item active" style="max-height:600px; overflow: hidden;">
-              
-                <img id="carousel-img0" src="https://source.unsplash.com/collection/954550/1920x1080">
-              </div>
 
-              <!-- 自适应大图 -->
-              <script>
-              	  var carouselResize = function() {
-              	  	  var h = document.body.clientHeight / 3;
-	                  var img0 = new Image();
-	                  var imageTag0 = document.getElementById("carousel-img0");
-	                  img0.src = imageTag0.src;
-	                  img0.onload=function(){
-	                    if (img0.width / img0.height <= document.body.clientWidth / h) {
-	                      imageTag0.style.width = document.body.clientWidth + "px";
-	                    } else {
-	                      imageTag0.style.height = h + "px";
-	                      imageTag0.style.marginLeft = -(h * img0.width / img0.height - document.body.clientWidth) / 2 + "px";
-	                    }
-	                  };
-              	  };
-                  carouselResize();
-              </script>
-            
-              
-                <div class="item" style="max-height:600px; overflow: hidden;">
-              
-                <img id="carousel-img1" src="https://source.unsplash.com/collection/954550/1920x1081">
-              </div>
+          <div class="item active" style="max-height:600px; overflow: hidden;">
+            <img id="carousel-img0" src="https://source.unsplash.com/collection/954550/1920x1080">
+          </div>
 
-              <!-- 自适应大图 -->
-              <script>
-              	  var carouselResize = function() {
-              	  	  var h = document.body.clientHeight / 3;
-	                  var img1 = new Image();
-	                  var imageTag1 = document.getElementById("carousel-img1");
-	                  img1.src = imageTag1.src;
-	                  img1.onload=function(){
-	                    if (img1.width / img1.height <= document.body.clientWidth / h) {
-	                      imageTag1.style.width = document.body.clientWidth + "px";
-	                    } else {
-	                      imageTag1.style.height = h + "px";
-	                      imageTag1.style.marginLeft = -(h * img1.width / img1.height - document.body.clientWidth) / 2 + "px";
-	                    }
-	                  };
-              	  };
-                  carouselResize();
-              </script>
+          <!-- 自适应大图 -->
+          <script>
+              var carouselResize = function() {
+                  var h = document.body.clientHeight / 3;
+                var img0 = new Image();
+                var imageTag0 = document.getElementById("carousel-img0");
+                img0.src = imageTag0.src;
+                img0.onload=function(){
+                  if (img0.width / img0.height <= document.body.clientWidth / h) {
+                    imageTag0.style.width = document.body.clientWidth + "px";
+                  } else {
+                    imageTag0.style.height = h + "px";
+                    imageTag0.style.marginLeft = -(h * img0.width / img0.height - document.body.clientWidth) / 2 + "px";
+                  }
+                };
+              };
+              carouselResize();
+          </script>
+              
+          <div class="item" style="max-height:600px; overflow: hidden;">
+            <img id="carousel-img1" src="https://source.unsplash.com/collection/954550/1920x1081">
+          </div>
+
+          <!-- 自适应大图 -->
+          <script>
+              var carouselResize = function() {
+                  var h = document.body.clientHeight / 3;
+                var img1 = new Image();
+                var imageTag1 = document.getElementById("carousel-img1");
+                img1.src = imageTag1.src;
+                img1.onload=function(){
+                  if (img1.width / img1.height <= document.body.clientWidth / h) {
+                    imageTag1.style.width = document.body.clientWidth + "px";
+                  } else {
+                    imageTag1.style.height = h + "px";
+                    imageTag1.style.marginLeft = -(h * img1.width / img1.height - document.body.clientWidth) / 2 + "px";
+                  }
+                };
+              };
+              carouselResize();
+            </script>
 
         </div>
 
@@ -259,13 +255,13 @@
       <div>
         <ul class="post-copyright">
           <li class="post-copyright-author">
+          Slogan...
+          </li>
+        </ul>
+        <ul class="post-copyright">
+          <li class="post-copyright-author">
           <strong>Created by </strong>Magitour</a>
           </li>
-          <li class="post-copyright-link">
-          <strong>本文链接:  </strong>
-          <a href="/about/index.html" target="_blank" title="">https://youdnot.github.io/about/index.html</a>
-          </li>
-
         </ul>
       <div>   
     </footer>
