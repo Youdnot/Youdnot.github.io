@@ -3,6 +3,7 @@
 - [ ] Archive the source mkdocs files
 - [ ] Archive the log README
 - [ ] Detail words in research
+- [ ] PDF & Pics render errors
 
 ## To be consider
 
