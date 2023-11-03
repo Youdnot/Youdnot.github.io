@@ -1,3 +1,7 @@
+# Intro
+
+Building the personal academic website for presentation.
+
 ## To-Dos
 
 - [ ] Archive the source mkdocs files
@@ -16,3 +20,5 @@
 - Add some pictures to illustrate the 
 - Adjust the structure of site in yaml
 - Create README.md as log
+
+> Powered by [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
