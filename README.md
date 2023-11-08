@@ -21,4 +21,6 @@ Building the personal academic website for presentation.
 - Adjust the structure of site in yaml
 - Create README.md as log
 
+> Inspired by [Peijin Zhang](https://pjzhang.cc/)
+>
 > Powered by [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
